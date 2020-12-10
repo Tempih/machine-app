@@ -176,13 +176,14 @@ from .forms import UserForm
 
 def index(request):
   submitbutton= request.POST.get("submit")
-
+  global i
   status=''
   star = ''
   form= UserForm(request.POST or None)
   if form.is_valid():
-      if i == 0:
-        testing()
+        if i == 0:
+            testing()
+            i = i + 1
         review= ['''{0}'''.format(form.cleaned_data.get("review"))]
         test_data = vect.transform(review)
         test_data_tfidf = tfidf.transform(test_data)
