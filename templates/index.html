@@ -1,0 +1,56 @@
+<head>
+<meta charset="UTF-8">
+    <!DOCTYPE html>
+    <html lang="ru">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Форма для тёмпиха</title>
+  <style>
+  .gachi-site{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #7986cb;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+textarea{
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+button{
+  border:none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+}</style>
+</head>
+<body>
+<div class="gachi-site">
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="Submit" name="submit" value="Submit"/>
+</form>
+
+{% if submitbutton == "Submit" %}
+<div class="text text--1">Commentary status: {{ review }}</div>
+    <div class="text text--2">Rating: {{ star }}</div>
+{% endif %}
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
