@@ -41,9 +41,9 @@ post = []
 negt = []
 rpos = []
 rneg = []
-directory = "/Users/artemmihajlov/PycharmProjects/untitled10/train/neg"
+directory = "/train/neg"
 openf(directory, data, 0, neg)
-directory = "/Users/artemmihajlov/PycharmProjects/untitled10/train/pos"
+directory = "/train/pos"
 openf(directory, data, 1, pos)
 # ras(pos,post,rpos)
 #
@@ -57,9 +57,9 @@ ttpos = []
 ttneg = []
 trpos = []
 trneg = []
-directory = "/Users/artemmihajlov/PycharmProjects/untitled10/test/neg"
+directory = "/test/neg"
 openf(directory, data, 0, neg)
-directory = "/Users/artemmihajlov/PycharmProjects/untitled10/test/pos"
+directory = "/test/pos"
 openf(directory, data, 1, pos)
 ras(data,target,real_data)
 ras(pos,tpos,ttpos)
